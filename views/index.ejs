@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <a href="/new">Create Message</a>
+    <% messages.forEach(function(message) { %>
+    <p>User: <%= message.user %></p>
+    <p>Text: <%= message.text %></p>
+    <p>Date: <%= message.added %></p>
+    <% }); %>
+  </body>
+</html>
